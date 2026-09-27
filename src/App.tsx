@@ -70,6 +70,18 @@ export default function App() {
     handleOpenWhatsApp(msg);
   };
 
+  const handleAprenderWhatsApp = () => {
+    handleOpenWhatsApp(
+      'Hola Vilmar, me comunico desde tu sitio web. Me interesa aprender Inteligencia Artificial (Aprender IA) y conocer más sobre los programas y modalidades disponibles.'
+    );
+  };
+
+  const handleImplementarWhatsApp = () => {
+    handleOpenWhatsApp(
+      'Hola Vilmar, me comunico desde tu sitio web. Me interesa implementar Inteligencia Artificial en mi negocio o empresa (Implementar IA) y coordinar un diagnóstico.'
+    );
+  };
+
   return (
     <div className="relative min-h-screen bg-[#030712] text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200">
       {/* Discreet Tech Cursor & Scanline Sweep (Sections 39 & 41) */}
@@ -88,8 +100,8 @@ export default function App() {
       <div className="relative z-10">
         {/* Sticky Modern Navbar (Section 3) */}
         <Navbar
-          onLearnClick={() => scrollToSection('curso')}
-          onImplementClick={() => scrollToSection('soluciones')}
+          onLearnClick={handleAprenderWhatsApp}
+          onImplementClick={handleImplementarWhatsApp}
           onOpenConsultation={() => {
             playModalChirp();
             setConsultationQuery('');
@@ -99,8 +111,8 @@ export default function App() {
 
         {/* Hero Section with 3D Holographic AI Experience (Sections 4 & 5) */}
         <HeroSection
-          onLearnClick={() => scrollToSection('curso')}
-          onImplementClick={() => scrollToSection('soluciones')}
+          onLearnClick={handleAprenderWhatsApp}
+          onImplementClick={handleImplementarWhatsApp}
         />
 
         {/* Qué Hago: Aprender · Aplicar · Implementar (Section 11) */}

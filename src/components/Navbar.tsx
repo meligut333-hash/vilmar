@@ -128,29 +128,30 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
             <button
               onClick={() => scrollToSection('contacto')}
-              className="hover:text-cyan-400 transition-colors py-1 cursor-pointer"
+              className="hover:text-cyan-400 transition-colors py-1 cursor-pointer pr-1"
             >
               Contacto
             </button>
           </nav>
 
-          {/* Desktop Action CTAs (Section 3: QUIERO APRENDER IA / QUIERO IMPLEMENTAR IA) */}
-          <div className="hidden lg:flex items-center gap-2.5">
+          {/* Desktop Action CTAs (Aprendería / Implementaría - separados de Contacto hacia el costado) */}
+          <div className="hidden lg:flex items-center gap-3 ml-8 xl:ml-12 pl-6 border-l border-cyan-500/30 shrink-0">
             <TactileButton
               variant="primary"
               size="sm"
               onClick={onLearnClick}
-              icon={<ArrowUpRight className="w-3.5 h-3.5" />}
+              icon={<MessageSquare className="w-3.5 h-3.5 text-slate-950 fill-current" />}
             >
-              QUIERO APRENDER IA
+              APRENDERÍA
             </TactileButton>
 
             <TactileButton
               variant="secondary"
               size="sm"
               onClick={onImplementClick}
+              icon={<MessageSquare className="w-3.5 h-3.5 text-cyan-400" />}
             >
-              QUIERO IMPLEMENTAR IA
+              IMPLEMENTARÍA
             </TactileButton>
           </div>
 
@@ -240,8 +241,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onLearnClick();
               }}
+              icon={<MessageSquare className="w-4 h-4 text-slate-950 fill-current" />}
             >
-              QUIERO APRENDER IA
+              APRENDERÍA (WhatsApp)
             </TactileButton>
             <TactileButton
               variant="secondary"
@@ -251,8 +253,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onImplementClick();
               }}
+              icon={<MessageSquare className="w-4 h-4 text-cyan-400" />}
             >
-              QUIERO IMPLEMENTAR IA
+              IMPLEMENTARÍA (WhatsApp)
             </TactileButton>
           </div>
         </div>
