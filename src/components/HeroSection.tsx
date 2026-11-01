@@ -45,15 +45,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onLearnClick, onImplem
 
         {/* Title */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white uppercase font-['Rajdhani'] leading-[1.08] mb-6 drop-shadow-[0_4px_30px_rgba(6,182,212,0.25)]">
-          INTELIGENCIA ARTIFICIAL <br />
+          TRANSFORMA TU NEGOCIO Y POTENCIA TU PRODUCTIVIDAD CON{' '}
           <span className="bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent">
-            APLICADA
+            INTELIGENCIA ARTIFICIAL APLICADA
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-2xl font-semibold text-slate-100 max-w-3xl mb-6 leading-relaxed">
-          Aprendé a usar IA, aplicala a tu trabajo y convertí problemas de negocio en soluciones concretas.
+          Programas de formación profesional, desarrollo de micro-apps a medida y consultoría estratégica en automatización para llevar tu proyecto al siguiente nivel.
         </p>
 
         {/* Explanatory Paragraph */}
@@ -68,7 +68,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onLearnClick, onImplem
             size="lg"
             onClick={onLearnClick}
             icon={<GraduationCap className="w-5 h-5 text-slate-950" />}
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto shadow-lg shadow-blue-500/20"
           >
             QUIERO APRENDER IA
           </TactileButton>
@@ -78,7 +78,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onLearnClick, onImplem
             size="lg"
             onClick={onImplementClick}
             icon={<Building2 className="w-5 h-5 text-cyan-400" />}
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto shadow-lg shadow-blue-500/20"
           >
             QUIERO IMPLEMENTAR IA
           </TactileButton>
