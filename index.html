@@ -43,12 +43,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 
     <script>
-      // Defensive suppressor for external Chrome extension errors
-      window.onerror = function(message, source, lineno, colno, error) {
-        if (typeof source === 'string' && source.includes('chrome-extension://')) {
-          return true; // Suppress external error
-        }
-      };
+      // Protección de nivel cero: impide que cualquier extensión sobrescriba fetch
+      (function() {
+        var originalFetch = window.fetch;
+        Object.defineProperty(window, 'fetch', {
+          get: function() { return originalFetch; },
+          set: function(val) { 
+            return; 
+          },
+          configurable: false,
+          enumerable: true
+        });
+      })();
     </script>
 
     <!-- Schema.org Structured Data (JSON-LD) -->
