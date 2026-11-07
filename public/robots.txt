@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://ais-dev-wexek7by4llt3mxk3ty4go-177286214915.us-west2.run.app/sitemap.xml
+Sitemap: https://vilmar-aiquantumstudio.netlify.app/sitemap.xml
