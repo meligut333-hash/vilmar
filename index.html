@@ -36,27 +36,69 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Course",
-      "name": "Programa Profesional de Inteligencia Artificial Aplicada",
-      "description": "Capacitación práctica en ChatGPT, Gemini, automatización y prompt engineering para personas, profesionales y negocios.",
-      "provider": {
-        "@type": "Organization",
-        "name": "AI Quantum Studio",
-        "sameAs": "https://vilmar-aiquantumstudio.netlify.app/"
-      },
-      "creator": {
-        "@type": "Person",
-        "name": "Vilmar Olivera"
-      },
-      "locationCreated": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Rosario",
-          "addressRegion": "Santa Fe",
-          "addressCountry": "AR"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://vilmar-aiquantumstudio.netlify.app/#website",
+          "url": "https://vilmar-aiquantumstudio.netlify.app/",
+          "name": "AI Quantum Studio",
+          "description": "Capacitaciones profesionales de IA Aplicada y Prompt Engineering en Rosario por Vilmar Olivera",
+          "inLanguage": "es"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Curso IA Aplicada",
+          "url": "https://vilmar-aiquantumstudio.netlify.app/#curso"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Soluciones para Negocios",
+          "url": "https://vilmar-aiquantumstudio.netlify.app/#soluciones"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Método de Trabajo",
+          "url": "https://vilmar-aiquantumstudio.netlify.app/#metodo"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Casos y Proyectos",
+          "url": "https://vilmar-aiquantumstudio.netlify.app/#casos"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Sobre Vilmar",
+          "url": "https://vilmar-aiquantumstudio.netlify.app/#sobre-vilmar"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Contacto",
+          "url": "https://vilmar-aiquantumstudio.netlify.app/#contacto"
+        },
+        {
+          "@type": "Course",
+          "name": "Programa Profesional de Inteligencia Artificial Aplicada",
+          "description": "Capacitación práctica en ChatGPT, Gemini, automatización y prompt engineering para personas, profesionales y negocios.",
+          "provider": {
+            "@type": "Organization",
+            "name": "AI Quantum Studio",
+            "sameAs": "https://vilmar-aiquantumstudio.netlify.app/"
+          },
+          "creator": {
+            "@type": "Person",
+            "name": "Vilmar Olivera"
+          },
+          "locationCreated": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Rosario",
+              "addressRegion": "Santa Fe",
+              "addressCountry": "AR"
+            }
+          }
         }
-      }
+      ]
     }
     </script>
     
